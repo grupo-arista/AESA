@@ -26,11 +26,11 @@ class XsltExtension extends \Twig_Extension
     public function xsl_transform($xml_string) {      	
 	      $xml_string = "<?xml version='1.0' encoding='iso-8859-1'?>\n".$xml_string;
 
-        $auth = base64_encode($this->container->getParameter('proxy.login').':'.$this->container->getParameter('proxy.password'));
+        $auth = base64_encode($this->container->getParameter('proxy_login').':'.$this->container->getParameter('proxy_password'));
 
         $opciones = array(
             'http' => array(
-                'proxy' => $this->container->getParameter('proxy.host').':'.$this->container->getParameter('proxy.port'),
+                'proxy' => $this->container->getParameter('proxy_host').':'.$this->container->getParameter('proxy_port'),
                 'request_fulluri' => true,
                 'header' => "Proxy-Authorization: Basic $auth",
             ),
