@@ -1,0 +1,16 @@
+parameters:
+#    xslt.url: http://www.aesa.dev/bundles/xsl/aesa.xsl
+    xslt.url: https://sede.seguridadaerea.gob.es/MFOMWeb/xsl/aesa.xsl
+
+    proxy.enabled: true
+    proxy.host: bluecoat.fomento.es
+    proxy.port: 8080
+    proxy.login: arista.olc
+    proxy.password: arista.olc
+
+#    proxy:
+#        enabled: true
+#        host: bluecoat.fomento.es
+#        port: 8080
+#        login: arista.olc
+#        password: arista.olc
