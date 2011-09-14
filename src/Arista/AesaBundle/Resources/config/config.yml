@@ -1,3 +1,9 @@
 parameters:
 #    xslt.url: http://www.aesa.dev/bundles/xsl/aesa.xsl
     xslt.url: https://sede.seguridadaerea.gob.es/MFOMWeb/xsl/aesa.xsl
+    
+    proxy.enabled: %proxy_enabled%
+    proxy.host: %proxy_host%
+    proxy.port: %proxy_port%
+    proxy.login: %proxy_login%
+    proxy.password: %proxy_password% 
