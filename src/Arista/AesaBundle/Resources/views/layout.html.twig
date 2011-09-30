@@ -2,57 +2,62 @@
 {% filter xsl_transform %}
 	{% block xml %}
 		<AESA>
-		{% block idiomas %}
+		  {% block idiomas %}
 			<idiomas>
 				<idioma href = "" title = "Español">Bienvenido</idioma>
 				<idioma href = "" title = "English">Welcome</idioma>
 			</idiomas>
-		{% endblock %}
-		{% block menu_opciones %}
-		<menu_opciones>
-			<opcion class="selected" href="home_usuario" target="_self" title="Servicio de licencias al personal de vuelo">
-				Servicio de licencias al personal de vuelo
-				<opcion  href="datos_personales.llamar_datos" target="_self" title="Datos personales">
-					Datos personales     
-				</opcion>  
-				<opcion  href="bandeja" target="_self" title="Bandeja de entrada">
-					Bandeja de entrada     
-				</opcion>  
-				<opcion  href="pck_revalidaciones.llamar_elegir_hab_firmada" target="_self" title="Estado de mis solicitudes">
-					Estado de mis solicitudes 
-				</opcion>  
-				<opcion  href="pck_revalidaciones.llamar_elegir_habilitacion" target="_self" title="Solicitudes de revalidación">
-					Solicitudes de revalidación 
-				</opcion>  
-				<opcion  href="pck_revalidaciones.llamar_elegir_piloto" target="_self" title="Gestión de Solicitudes de Examen">
-					Gestión de Solicitudes de Examen
-				</opcion>
-				<opcion class="selection" href="pck_revalidaciones_ca.home_revalidaciones_ca" target="_self" title="Revalidaciones para compañías aéreas">
-					Revalidaciones para compañías aéreas
-					<opcion href="pck_revalidaciones_ca.llamar_inicio_revalidacion" target="_self" title="Inicio de una revalidación">
-						Inicio de una revalidación
-					</opcion>        
-					<opcion class="select" href="pck_revalidaciones_ca.llamar_cump_forms" target="_self" title="Cumplimentación de formularios">
-						Cumplimentación de formularios
-					</opcion>                  
-				</opcion>
-				<opcion  href="licencias.llamar_elegir_licencia" target="_self" title="Información de mis licencias">
-					Información de mis licencias     
-				</opcion>   
-				<opcion  href="verificacion_firma_aviso" target="_self" title="Verificación del módulo de firma digital">
-					Verificación del módulo de firma digital 
-				</opcion>  
-				<opcion  href="llamar_correo_interno" target="_self" title="Soporte técnico">
-					Soporte técnico 
-				</opcion>  
-				<opcion  href="salir" target="_self" title="Cerrar sesión">
-					Cerrar sesión 
-				</opcion>      
-			</opcion>
+		  {% endblock %}
+		  {% block menu_opciones %}
+		  <menu_opciones>
+			  <opcion class="selected" href="home_usuario" target="_self" title="Servicio de licencias al personal de vuelo">
+				  Servicio de licencias al personal de vuelo
+				  <opcion  href="datos_personales.llamar_datos" target="_self" title="Datos personales">
+					  Datos personales     
+				  </opcion>  
+				  <opcion  href="bandeja" target="_self" title="Bandeja de entrada">
+					  Bandeja de entrada     
+				  </opcion>  
+				  <opcion  href="pck_revalidaciones.llamar_elegir_hab_firmada" target="_self" title="Estado de mis solicitudes">
+					  Estado de mis solicitudes 
+				  </opcion>  
+				  <opcion  href="pck_revalidaciones.llamar_elegir_habilitacion" target="_self" title="Solicitudes de revalidación">
+					  Solicitudes de revalidación 
+				  </opcion>  
+				  <opcion  href="pck_revalidaciones.llamar_elegir_piloto" target="_self" title="Gestión de Solicitudes de Examen">
+					  Gestión de Solicitudes de Examen
+				  </opcion>
+				  <opcion class="selection" href="pck_revalidaciones_ca.home_revalidaciones_ca" target="_self" title="Revalidaciones para compañías aéreas">
+					  Revalidaciones para compañías aéreas
+					  <opcion href="pck_revalidaciones_ca.llamar_inicio_revalidacion" target="_self" title="Inicio de una revalidación">
+						  Inicio de una revalidación
+					  </opcion>        
+					  <opcion class="select" href="pck_revalidaciones_ca.llamar_cump_forms" target="_self" title="Cumplimentación de formularios">
+						  Cumplimentación de formularios
+					  </opcion>                  
+				  </opcion>
+				  <opcion  href="licencias.llamar_elegir_licencia" target="_self" title="Información de mis licencias">
+					  Información de mis licencias     
+				  </opcion>   
+				  <opcion  href="verificacion_firma_aviso" target="_self" title="Verificación del módulo de firma digital">
+					  Verificación del módulo de firma digital 
+				  </opcion>  
+				  <opcion  href="llamar_correo_interno" target="_self" title="Soporte técnico">
+					  Soporte técnico 
+				  </opcion>  
+				  <opcion  href="salir" target="_self" title="Cerrar sesión">
+					  Cerrar sesión 
+				  </opcion>      
+			  </opcion>
   		</menu_opciones>
-		{% endblock %}
-		
-		
+		  {% endblock %}
+      <contenido>		
+        <div>
+        {% block contenido %}
+          <p>Hola Mundo!!!</p>
+		    {% endblock %}
+        </div>
+		  </contenido>
 		</AESA>
 	{% endblock %}
 {% endfilter %}                

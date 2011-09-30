@@ -1,1 +1,9 @@
 {% extends 'AristaAesaBundle::layout.html.twig' %}
+{% block contenido %}
+  <ul>
+  {% for item in ws_functions %}
+    <li>{{ item }}</li>
+  {% endfor %}
+  </ul>
+{% endblock %}
+

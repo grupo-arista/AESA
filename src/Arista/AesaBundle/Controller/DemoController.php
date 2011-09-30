@@ -14,6 +14,13 @@ class DemoController extends Controller
      */
     public function indexAction()
     {
-        return array();
+		$client = new \SoapClient("http://10.67.0.208/ServiciosWebSCE/WSSENASA?WSDL", 
+											array('proxy_host'     => "bluecoat.fomento.es",
+													'proxy_port'     => 8080,
+													'proxy_login'    => "arista.olc",
+													'proxy_password' => "arista.olc"));
+		$ws_functions = $client->__getFunctions();	
+		$verificar =  $client->verificar("SENASA");	
+        return array("ws_functions" => $ws_functions);
     }
 }
