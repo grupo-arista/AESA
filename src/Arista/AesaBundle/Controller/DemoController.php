@@ -20,7 +20,8 @@ class DemoController extends Controller
 													'proxy_login'    => "arista.olc",
 													'proxy_password' => "arista.olc"));
 		$ws_functions = $client->__getFunctions();	
-		$verificar =  $client->verificar("SENASA");	
+		//$verificar = $client->__soapCall('verificar', array('idcliente' => 'SENASA'));
+		$verificar = $client->verificar(array('idcliente' => 'SENASA'));	
         return array("ws_functions" => $ws_functions);
     }
 }
